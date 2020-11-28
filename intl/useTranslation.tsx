@@ -6,7 +6,7 @@ import { LangStrings } from "./Strings";
 export default function useTranslation() {
     const [locale] = useContext(LanguageContext);
 
-    function t(key: string) {
+    function term(key: string) {
         if (!LangStrings[locale][key]) {
             console.warn(`No string '${key}' for locale '${locale}'`);
         }
@@ -16,5 +16,5 @@ export default function useTranslation() {
         );
     }
 
-    return { t, locale };
+    return { term, locale };
 }

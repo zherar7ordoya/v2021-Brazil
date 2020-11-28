@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Navigation: React.FC<Props> = ({ className }) => {
-    const { t, locale } = useTranslation();
+    const { term, locale } = useTranslation();
     const navClass = className || "navigation";
 
     return (
@@ -16,17 +16,17 @@ const Navigation: React.FC<Props> = ({ className }) => {
             <ul>
                 <li>
                     <Link href={`/`} as={`/`}>
-                        <a>{t("home")}</a>
+                        <a>{term("home")}</a>
                     </Link>
                 </li>
                 <li>
                     <Link href={`/[lang]/articles`} as={`/${locale}/articles`}>
-                        <a>{t("articles")}</a>
+                        <a>{ term("articles")}</a>
                     </Link>
                 </li>
                 <li>
                     <Link href={`/about`} as={`/about`}>
-                        <a>{t("about")}</a>
+                        <a>{ term("about")}</a>
                     </Link>
                 </li>
             </ul>

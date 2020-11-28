@@ -11,7 +11,7 @@ const Logo: React.FC<Props> = ({ link }) => {
     return (
         <Link href={href}>
             <a className="logo">
-                <img src="/svg/logo.svg" alt="logo" />
+                <img src="./vercel.svg" alt="logo" />
             </a>
         </Link>
     );
