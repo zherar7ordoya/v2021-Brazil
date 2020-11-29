@@ -1,5 +1,5 @@
 import { AppPropsType } from "next/dist/next-server/lib/utils";
-import { LanguageProvider } from "../intl/LanguageProvider";
+import { LanguageProvider } from "../translator/LanguageProvider";
 
 import "../styles/layout.css"
 

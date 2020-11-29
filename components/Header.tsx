@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import Navigation from "./Navigation";
 import Logo from "./Logo";
-import { LanguageContext, locales } from "../intl/LanguageProvider";
+import { LanguageContext, locales } from "../translator/LanguageProvider";
 
 interface Props {
     className?: string;

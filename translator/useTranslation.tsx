@@ -1,7 +1,7 @@
 import { useContext } from "react";
-
 import { LanguageContext, defaultLocale } from "./LanguageProvider";
-import { LangStrings } from "./Strings";
+
+const LangStrings = require('../data/resume.json');
 
 export default function useTranslation() {
     const [locale] = useContext(LanguageContext);
